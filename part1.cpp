@@ -52,6 +52,7 @@ int fib(int n)
         return n;
     return fib(n-1) + fib(n-2);
 }
+//prime number
 int prime()
 {
   int n, i, m=0, flag=0;
@@ -146,7 +147,20 @@ int rootsquad() {
         cout << "x1 = " << realPart << "+" << imaginaryPart << "i" << endl;
         cout << "x2 = " << realPart << "-" << imaginaryPart << "i" << endl;
     }
+void even_or_odd()
+{
+    int n;
 
+    cout << "Enter an integer: ";
+    cin >> n;
+
+    if ( n % 2 == 0)
+        cout << n << " is even.";
+    else
+        cout << n << " is odd.";
+
+    return 0;
+}
     return 0;
 }
 int main ()
@@ -161,6 +175,6 @@ int main ()
     lcm();
     getchar();
     binarysearch();
-
+    even_or_odd();
     return 0;
 }
